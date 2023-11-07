@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+
+  rhies-client-registry-server:
+    image: registry.gitlab.com/rbc5/provider-registry-frontend:latest
+    container_name: provider-registry-frontend
+    ports:
+      - "7300:3001"
+    restart: on-failure
